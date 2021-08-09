@@ -2,15 +2,15 @@
 #include <string.h>
 
 
-// program to find string length using strlen() function
+// program to copy a string using strcpy() function
 
 void main() {
     char string1[20];
-    int len;
-    printf("Enter any name: ");
+    char string2[20];
+    printf("Enter String 1: ");
     scanf("%s", &string1);
-    len =  strlen(string1);
-    printf("Length of name is: %d", len);
+    strcpy(string2, string1);
+    printf("Copied string is: %s", string2);
 }
 
 
@@ -18,4 +18,4 @@ void main() {
 // ============================================================================
 
 
-// program to find string length without using strlen() function
+// program to copy a string without using strcpy() function
