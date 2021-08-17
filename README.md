@@ -5,9 +5,13 @@
 
 > - These are some codes of basic programming methods. (Soon some projects will be added.)
 
-> - Right now this repository contains code of <a href="https://www.python.org" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> and <a href="https://www.cprogramming.com/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/> </a>. (Soon more languages will be added.)
+> - Right now this repository contains code of Python and C. (Soon more languages will be added.)
 
 > - **Topics**: <br>
 > `Basic Maths` `Star & Number Patterns` `Matrix` `Arrays` `Alphabets`
 
 > - These programs can help you in your exams also 😅.
+
+<a href="https://www.python.org" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a>
+
+<a href="https://www.cprogramming.com/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/> </a>
