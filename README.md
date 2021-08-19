@@ -8,7 +8,7 @@
 > - Right now this repository contains code of Python and C. (Soon more languages will be added.)
 
 > - **Topics**: <br>
-> `Basic Maths` `Data Types` `Star & Number Patterns` `Matrix` `Arrays` `Alphabets`
+> `Basic Maths` `Data Types` `Star & Number Patterns` `Matrix` `Arrays` `Printing Alphabets`
 
 > - These programs can help you in your exams also 😅. <br><br>
 
