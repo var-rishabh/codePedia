@@ -6,3 +6,4 @@ for i in range(1, totalNumbers + 1):
     a = int(input(f"Enter number {i}: "))
     sum += a
 print("Sum is: ", sum)
+
