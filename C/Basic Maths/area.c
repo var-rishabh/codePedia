@@ -30,7 +30,7 @@ void main() {
 //============================================================================
 
 
-// program to find area of a square
+// program to find area of a rectangle
 
 void main() {
     float area, length, breadth;
