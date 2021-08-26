@@ -5,12 +5,12 @@
 // program to find string length using strlen() function
 
 void main() {
-    char string1[20];
+    char string[20];
     int len;
-    printf("Enter any name: ");
-    scanf("%s", &string1);
-    len =  strlen(string1);
-    printf("Length of name is: %d", len);
+    printf("Enter a string: ");
+    scanf("%s", &string);
+    len =  strlen(string);
+    printf("Length of string is: %d", len);
 }
 
 
@@ -19,3 +19,15 @@ void main() {
 
 
 // program to find string length without using strlen() function
+
+
+void main() {
+    char string[20];
+    int len = 0;
+    printf("Enter a string: ");
+    scanf("%s", &string);
+    for (int i=0; string[i] != '\0'; i++) {
+        len++;
+    }
+    printf("Length of string is: %d", len);
+}
