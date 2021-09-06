@@ -5,7 +5,7 @@
 
 > - These are some codes of basic programming methods. (Soon some projects will be added.)
 
-> - Right now this repository contains code of Python and C. (Soon more languages will be added.)
+> - Right now this repository contains code of Python, C and C++. (Soon more languages will be added.)
 
 > - **Topics**: <br>
 > `Basic Maths` `Data Types` `Star & Number Patterns` `Matrix` `Arrays` `Printing Alphabets`
