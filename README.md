@@ -10,7 +10,7 @@
 > - **Topics**: <br>
 > `Basic Maths` `Data Types` `Star & Number Patterns` `Matrix` `Arrays` `Printing Alphabets` `Cool GUI Patterns` `Small Games`
 
-> - These programs can help you in your exams also 😅. <br><br>
+> - These programs can help you in your exams also 😅. <br>
 
 <p align="center"> 
 <a href="https://www.python.org" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="60" height="60"/> </a> 
