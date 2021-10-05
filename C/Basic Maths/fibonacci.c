@@ -1,7 +1,6 @@
 // program to print fibonacci series
 
-#include<stdio.h>
-#include<conio.h>
+#include <stdio.h>
 
 void main() {
     int num1 = 0, num2 = 1, n3, i, number;
