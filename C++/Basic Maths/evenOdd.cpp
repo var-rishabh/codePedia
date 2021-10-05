@@ -1,29 +1,32 @@
-#include <stdio.h>
+#include <iostream>
+using namespace std;
 
 // program to print n even numbers
 
-void main() {
+int main() {
     int num, i;
-    printf("Enter a number: ");
-    scanf("%d", &num);
-    printf("Even numbers are: \n");
+    cout << "Enter a number: ";
+    cin >> num;
+    cout << "Even numbers are: " << endl;
     for (i=0; i <=num; i+=2) {
-        printf("%d\n", i);    
+        cout << i << endl;
     }
+    return 0;
 }
 
 // or
 
-void main() {
+int main() {
     int num, i;
-    printf("Enter a number: ");
-    scanf("%d", &num);
-    printf("Even numbers are: \n");
+    cout << "Enter a number: ";
+    cin >> num;
+    cout << "Even numbers are: " << endl;
     for (i=0; i <=num; i++) {
         if (i%2 == 0) {
-            printf("%d\n", i);
+            cout << i << endl;
         }
     }
+    return 0;
 }
 
 
@@ -33,28 +36,30 @@ void main() {
 
 // program to print n odd numbers
 
-void main() {
+int main() {
     int num, i;
-    printf("Enter a number: ");
-    scanf("%d", &num);
-    printf("Odd numbers are: \n");
+    cout << "Enter a number: ";
+    cin >> num;
+    cout << "Odd numbers are: " << endl;
     for (i=1; i <=num; i+=2) {
-        printf("%d\n", i);    
+        cout << i << endl;    
     }
+    return 0;
 }
 
 // or
 
-void main() {
+int main() {
     int num, i;
-    printf("Enter a number: ");
-    scanf("%d", &num);
-    printf("Odd numbers are: \n");
+    cout << "Enter a number: ";
+    cin >> num;
+    cout << "Odd numbers are: " << endl;
     for (i=0; i <=num; i++) {
         if (i%2 != 0) {
-            printf("%d\n", i);
+            cout << i << endl;
         }
     }
+    return 0;
 }
 
 
@@ -64,15 +69,16 @@ void main() {
 
 // program to find a number is even or odd
 
-void main() {
+int main() {
     int num;
-    printf("Enter a number: ");
-    scanf("%d", &num);
+    cout << "Enter a number: ";
+    cin >> num;
     if (num%2 == 0) {
-        printf("%d is Even.", num);
+        cout << num << " is Even.";
     } else {
-        printf("%d is Odd.", num);
+        cout << num << " is Odd.";
     }
+    return 0;
 }
 
 

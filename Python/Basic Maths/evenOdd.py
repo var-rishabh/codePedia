@@ -1,4 +1,5 @@
 # program to print n even numbers
+
 num = int(input("Enter a number: "))
 print("Even numbers are: ")
 for x in range(0, num+1):
@@ -11,6 +12,7 @@ for x in range(0, num+1):
 
 
 # program to print n odd numbers
+
 num = int(input("Enter a number: "))
 print("Odd numbers are: ")
 for x in range(0, num+1):
@@ -23,6 +25,7 @@ for x in range(0, num+1):
 
 
 # program to check a number is even or odd
+
 num = int(input("Enter a number: "))
 if num%2 == 0:
     print(f"{num} is Even.")
