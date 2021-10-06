@@ -1,4 +1,5 @@
-#include <stdio.h>
+#include <iostream>
+using namespace std;
 
 //          1
 //          1 2
@@ -6,16 +7,17 @@
 //          1 2 3 4
 //          1 2 3 4 5
   
-void main() { 
+int main() { 
   int a;
-  printf("Enter a number: ");
-  scanf("%d", &a);       
+  cout << "Enter a number: ";
+  cin >> a;
   for (int i=0; i<=a; i++) {
-      for (int j=1; j<=i; j++) {
-          printf("%d ",j);
-      }
-      printf("\n");
+    for (int j=1; j<=i; j++) {
+    cout << j << " ";
+    }
+    cout << endl;
   }
+    return 0;
 }
 
 
@@ -28,17 +30,18 @@ void main() {
 //          4 5 6
 //          7 8 9 10
   
-void main() {
+int main() { 
   int a, num = 1;
-  printf("Enter a number: ");
-  scanf("%d", &a);       
+  cout << "Enter a number: ";
+  cin >> a;      
   for (int i=0; i<=a; i++) {
-      for (int j=1; j<=i; j++) {
-          printf("%d ",num);
-          num++;
-      }
-      printf("\n");
+    for (int j=1; j<=i; j++) {
+        cout << num << " ";
+        num++;
+    }
+    cout << endl;
   }
+  return 0;
 }
 
 
