@@ -1,5 +1,5 @@
-#include <stdio.h>
-
+#include <iostream>
+using namespace std;
 
 //      *
 //      * *
@@ -7,14 +7,15 @@
 //      * * * *
 //      * * * * *
 
-void main() {
+int main() {
     int i, j, rows = 5;                                                                      
     for (i=1; i <= rows; i++) {                         
         for (j=1; j <= i; j++) {                         
-            printf("* ");                                    
+            cout << "* ";                                    
         }                                                
-    printf("\n");                                        
+    cout << endl;                                        
     }
+    return 0;
 }
 
 
@@ -28,14 +29,15 @@ void main() {
 //      * *
 //      *
 
-void main() {
+int main() {
     int i, j, rows = 5;                                                                      
     for (i=1; i <= rows; i++) {                       
         for (j=5; j >= i; j--) {                        
-            printf("* ");                                   
+            cout << "* ";                                   
         }                                               
-    printf("\n");                                       
+    cout << endl;                                        
     }
+    return 0;
 }
 
 
@@ -49,18 +51,19 @@ void main() {
 //         * * * *
 //        * * * * *
 
-void main() {  
+int main() {  
     int p=0, m=5;
     for (int i=1; i<=5; i++) {  
         for (int j=1; j<=m-1; j++) {  
-            printf(" ");  
+            cout << " "; 
         } for (int k=1; k<=p+1; k++) {  
-            printf("* ");  
+            cout << "* ";  
         }  
         p++;
         m--;  
-        printf("\n");  
+        cout << endl; 
     }  
+    return 0;
 }  
 
 
@@ -74,19 +77,20 @@ void main() {
 //           * *
 //            *
 
-void main() {
+int main() {
     int m=1, n=6;  
     for (int i=5; i>=1; i--) {  
         for (int j=1; j<m; j++) {  
-            printf(" ");  
+            cout << " ";  
         } 
         for (int k=1; k<=n-1; k++) {  
-            printf("* ");  
+            cout << "* ";  
         }  
         m++;  
         n--;
-        printf("\n");  
+        cout << endl;
     }  
+    return 0;
 }  
 
 
@@ -102,16 +106,16 @@ void main() {
 //            * *
 //             *
 
-void main() {  
+int main() {  
   int n = 7;  
   int spaces = n-1;  
   int stars = 1;  
   for (int i=1; i<=n; i++) {  
     for (int j=1; j<=spaces; j++) {  
-      printf(" ");  
+      cout << " ";  
     } 
     for (int k=1; k<=stars; k++) {  
-      printf("* ");  
+      cout << "* ";  
     }  
     if (spaces>i) {  
       spaces=spaces-1;  
@@ -121,8 +125,9 @@ void main() {
       spaces=spaces+1;  
       stars=stars-1;  
     }  
-    printf("\n");  
+    cout << endl;  
   }  
+  return 0;
 } 
 
 
@@ -136,23 +141,24 @@ void main() {
 //        *           *
 //       * * * * * * * * 
 
-void main() { 
+int main() { 
     int n=5, m=5;   
     for(int i=1; i<=n; i++) {  
         for(int j=1; j<=m-1; j++) {  
-            printf("  ");  
+            cout << "  ";  
         }  
         for(int k=1; k<=2*i-1; k++)  
         {  
             if(k==1 || k==2*i-1 || i==n) {
-                printf("* ");  
+                cout << "* ";  
             } else {
-                printf("  ");
+                cout << "  ";
             }  
         }  
         m--;  
-        printf("\n");  
+        cout << endl;  
     }  
+    return 0;
 }  
 
 
@@ -166,20 +172,21 @@ void main() {
 //              * *
 //                *
 
-void main() { 
+int main() { 
     int n=5, m=5;  
     for (int i=1; i<=n; i++) {  
         for (int j=1; j<i; j++) {  
-            printf("  ");  
+            cout << "  "; 
         }  
         for(int k=1;k<=m;k++) {  
             if(i==1 || k==1 || k==m) {
-                printf("* ");  
+                cout << "* ";  
             } else {
-                printf("  ");  
+                cout << "  ";  
             }  
         }  
         m--;  
-        printf("\n");  
+        cout << endl; 
     }  
+    return 0;
 }  
