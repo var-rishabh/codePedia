@@ -1,16 +1,19 @@
 #include <iostream>
 using namespace std;
 
-// program to add n number of integers
+// program to add all integers from an array
 
 int main() {
-    int num, sum = 0, i, n;
+    int sum = 0, n;
     cout << "How many number do you want to add? : ";
     cin >> n;
-    for (i = 1; i <= n; i++) {
-        cout << "Enter number " << i << ": ";
-        cin >> num;
-        sum = sum + num;
+    int numbers[n];
+    cout << "Enter numbers : ";
+    for (int i = 0; i < n; i++) {
+        cin >> numbers[i];
+    }
+    for (int j = 0; j < n; j++) {
+        sum = sum + numbers[j];
     }
     cout << "Sum is : " << sum;
     return 0;
