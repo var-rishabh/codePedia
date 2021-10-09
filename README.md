@@ -5,7 +5,7 @@
 
 > - These are some codes to understand a normal programming language. (Soon some DSA Questions and  projects will be added.)
 
-> -This encyclopedia contains code of Python, C, C++ and Java. (Soon more languages will be added.)
+> - This encyclopedia contains code of Python, C, C++ and Java. (Soon more languages will be added.)
 
 > - **Topics**: <br>
 > `Basic Maths` `Data Types` `Star & Number Patterns` `Matrix` `Arrays` `Printing Alphabets` `Cool GUI Patterns` `Small Games`
