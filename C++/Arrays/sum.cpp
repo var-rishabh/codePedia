@@ -4,7 +4,8 @@ using namespace std;
 // program to add all integers from an array
 
 int main() {
-    int sum = 0, n;
+    int sum = 0;
+    int n;
     cout << "How many number do you want to add? : ";
     cin >> n;
     int numbers[n];
