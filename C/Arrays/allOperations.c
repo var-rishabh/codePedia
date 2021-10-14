@@ -266,17 +266,8 @@ void Rearrange(struct Array *arr) {
 
 int main() {
     struct Array arr1 = {{1,12,23,34,45,69,81,93,99,100}, 20, 10};
-    struct Array arr2 = {{2,10,25,34,44,69,77,95,98,100}, 20, 10};
-    // struct Array arr1 = {{10,6,2,7,4,3,1,9,8,5}, 20, 10};
-    // struct Array arr2 = {{8,10,12,6,2,0,14,16,18,20}, 20, 10};
-    struct Array *arr3;
-
+    
     Display(arr1);
-    Display(arr2);
-
-    arr3 = Difference(&arr1, &arr2);
-
-    Display(*arr3);
 
     return 0;
 }
