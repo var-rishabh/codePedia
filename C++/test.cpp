@@ -11,8 +11,7 @@ struct point {
     int y;
 };
 
-struct phone
-{
+struct phone {
        int area;         
        int exchange;     
        int number;       
@@ -28,7 +27,7 @@ int main() {
     cin >> pow;
     cout << double(power(num,pow));   
 
-    // // Q - 2
+    // Q - 2
     struct point X, Y, Z;
     cout << "Enter coordinates for X: ";
     cin >> X.x >> X.y;
