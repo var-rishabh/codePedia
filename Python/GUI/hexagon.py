@@ -1,4 +1,4 @@
-# program to print a cool hexagon using turtle
+# program to print a cool rainbow hexagon using turtle
 
 import turtle
 
