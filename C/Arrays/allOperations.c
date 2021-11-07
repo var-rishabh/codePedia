@@ -169,7 +169,7 @@ int IsSorted(struct Array arr) {                               /* -- Checking if
     return 1;
 }
 
-void Rearrange(struct Array *arr) {
+void Rearrange(struct Array *arr) {                             /* -- Making an array sorted */
     int i = 0;
     int j = arr->length - 1;
     while (i < j) {
