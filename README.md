@@ -8,7 +8,7 @@
 > - This encyclopedia contains code of Python, C, C++ and Java. (Soon more languages will be added.)
 
 > - **Topics**: <br>
-> `Basic Maths` `Data Types` `Star & Number Patterns` `Matrix` `Arrays` `Printing Alphabets` `Cool GUI Patterns` `Small Games`
+> `Basic Maths` `Data Types` `Star & Number Patterns` `DSA` `Matrix` `Arrays` `Printing Alphabets` `Cool GUI Patterns` `Small Games`
 
 > - These programs can help you in your exams also 😅. <br>
 
