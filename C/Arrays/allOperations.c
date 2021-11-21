@@ -57,7 +57,7 @@ void Swap(int *x, int *y) {                                     /* -- swapping t
 int LinearSearch(struct Array *arr, int ele) {                  /* -- Linear Search of an element in an array */
     for (int i = 0; i < arr->length; i++) {
         if (ele == arr->A[i]) {
-            Swap(&arr->A[i], &arr->A[i-1]);
+            Swap(&arr->A[i], &arr->A[i-1]);     // to improve search for searching element again
             return i;
         }
     }
@@ -179,94 +179,93 @@ void Rearrange(struct Array *arr) {                             /* -- Making an 
     }
 }
 
-// struct Array* Merge(struct Array *arr1, struct Array *arr2) {            /* -- Merging two array */
-//     int i, j, k;
-//     i = j = k = 0;
-//     struct Array *arr3 = new struct Array;
-//     while(i<arr1->length && j<arr2->length) {
-//         if (arr1->A[i] < arr2->A[j]) {
-//             arr3->A[k++] = arr1->A[i++];
-//         } else {
-//             arr3->A[k++] = arr2->A[j++];
-//         }
-//     }
-//     for (; i < arr1->length; i++) {
-//         arr3->A[k++] = arr1->A[i];
-//     }
-//     for (; j < arr2->length; j++) {
-//         arr3->A[k++] = arr2->A[j];
-//     }
-//     arr3->length = arr1->length + arr2->length;
-//     arr3->size = 20;
-//     return arr3;
-// }
+struct Array* Merge(struct Array *arr1, struct Array *arr2) {            /* -- Merging two array */
+    int i, j, k;
+    i = j = k = 0;
+    struct Array *arr3 = (struct Array *)malloc(sizeof(struct Array));
+    while(i<arr1->length && j<arr2->length) {
+        if (arr1->A[i] < arr2->A[j]) {
+            arr3->A[k++] = arr1->A[i++];
+        } else {
+            arr3->A[k++] = arr2->A[j++];
+        }
+    }
+    for (; i < arr1->length; i++) {
+        arr3->A[k++] = arr1->A[i];
+    }
+    for (; j < arr2->length; j++) {
+        arr3->A[k++] = arr2->A[j];
+    }
+    arr3->length = arr1->length + arr2->length;
+    arr3->size = 20;
+    return arr3;
+}
 
-// struct Array* Union(struct Array *arr1, struct Array *arr2) {            /* -- Union of two array */
-//     int i, j, k;
-//     i = j = k = 0;
-//     struct Array *arr3 = new struct Array;
-//     while(i<arr1->length && j<arr2->length) {
-//         if (arr1->A[i] < arr2->A[j]) {
-//             arr3->A[k++] = arr1->A[i++];
-//         } else if (arr2->A[j] < arr1->A[i]){
-//             arr3->A[k++] = arr2->A[j++];
-//         } else {
-//             arr3->A[k++] = arr1->A[i++];
-//             j++;
-//         }
-//     }
-//     for (; i < arr1->length; i++) {
-//         arr3->A[k++] = arr1->A[i];
-//     }
-//     for (; j < arr2->length; j++) {
-//         arr3->A[k++] = arr2->A[j];
-//     }
-//     arr3->length = k;
-//     arr3->size = 20;
-//     return arr3;
-// }
+struct Array* Union(struct Array *arr1, struct Array *arr2) {            /* -- Union of two array */
+    int i, j, k;
+    i = j = k = 0;
+    struct Array *arr3 = (struct Array *)malloc(sizeof(struct Array));
+    while(i<arr1->length && j<arr2->length) {
+        if (arr1->A[i] < arr2->A[j]) {
+            arr3->A[k++] = arr1->A[i++];
+        } else if (arr2->A[j] < arr1->A[i]){
+            arr3->A[k++] = arr2->A[j++];
+        } else {
+            arr3->A[k++] = arr1->A[i++];
+            j++;
+        }
+    }
+    for (; i < arr1->length; i++) {
+        arr3->A[k++] = arr1->A[i];
+    }
+    for (; j < arr2->length; j++) {
+        arr3->A[k++] = arr2->A[j];
+    }
+    arr3->length = k;
+    arr3->size = 20;
+    return arr3;
+}
 
-// struct Array* Intersection(struct Array *arr1, struct Array *arr2) {            /* -- Intersection of two array */
-//     int i, j, k;
-//     i = j = k = 0;
-//     struct Array *arr3 = new struct Array;
-//     while(i<arr1->length && j<arr2->length) {
-//         if (arr1->A[i] < arr2->A[j]) {
-//             i++;
-//         } else if (arr2->A[j] < arr1->A[i]){
-//             j++;
-//         } else if (arr1->A[i] == arr2->A[j]) {
-//             arr3->A[k++] = arr1->A[i++];
-//             j++;
-//         }
-//     }
-//     arr3->length = k;
-//     arr3->size = 20;
-//     return arr3;
-// }
+struct Array* Intersection(struct Array *arr1, struct Array *arr2) {            /* -- Intersection of two array */
+    int i, j, k;
+    i = j = k = 0;
+    struct Array *arr3 = (struct Array *)malloc(sizeof(struct Array));
+    while(i<arr1->length && j<arr2->length) {
+        if (arr1->A[i] < arr2->A[j]) {
+            i++;
+        } else if (arr2->A[j] < arr1->A[i]){
+            j++;
+        } else if (arr1->A[i] == arr2->A[j]) {
+            arr3->A[k++] = arr1->A[i++];
+            j++;
+        }
+    }
+    arr3->length = k;
+    arr3->size = 20;
+    return arr3;
+}
 
-// struct Array* Difference(struct Array *arr1, struct Array *arr2) {            /* -- Difference of two array */
-//     int i, j, k;
-//     i = j = k = 0;
-//     struct Array *arr3 = new struct Array;
-//     while(i<arr1->length && j<arr2->length) {
-//         if (arr1->A[i] < arr2->A[j]) {
-//             arr3->A[k++] = arr1->A[i++];
-//         } else if (arr2->A[j] < arr1->A[i]){
-//             arr3->A[k++] = arr2->A[j++];
-//         } else if (arr1->A[i] == arr2->A[j]) {
-//             i++;
-//             j++;
-//         }
-//     }
-//     arr3->length = k;
-//     arr3->size = 20;
-//     return arr3;
-// }
+struct Array* Difference(struct Array *arr1, struct Array *arr2) {            /* -- Difference of two array */
+    int i, j, k;
+    i = j = k = 0;
+    struct Array *arr3 = (struct Array *)malloc(sizeof(struct Array));
+    while(i<arr1->length && j<arr2->length) {
+        if (arr1->A[i] < arr2->A[j]) {
+            arr3->A[k++] = arr1->A[i++];
+        } else if (arr2->A[j] < arr1->A[i]){
+            arr3->A[k++] = arr2->A[j++];
+        } else if (arr1->A[i] == arr2->A[j]) {
+            i++;
+            j++;
+        }
+    }
+    arr3->length = k;
+    arr3->size = 20;
+    return arr3;
+}
 
 int main() {
-    struct Array arr1 = {{1,12,23,34,45,69,81,93,99,100}, 20, 10};
-    
+    struct Array arr1 = {{1,12,31,34,55,69,81,93,99,100}, 20, 10};
     Display(arr1);
 
     return 0;
