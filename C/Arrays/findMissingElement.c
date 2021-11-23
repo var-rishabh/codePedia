@@ -1,7 +1,6 @@
 // program to find missing element in a sequencial array
 
-#include <iostream>
-using namespace std;
+#include <stdio.h>
 
 int Missing1(int A[], int size) {          // finding missing element
     int diff = A[0] - 0;
@@ -19,7 +18,7 @@ void MulMissing(int A[], int size) {          // finding multiple missing elemen
     for (int i = 0; i < size; i++) {
         if (A[i]-i != diff) {
             while (diff < A[i]-i) {
-                cout << i + diff << " ";
+                printf("%d ", i + diff);
                 diff++;
             }
         }
@@ -29,7 +28,7 @@ void MulMissing(int A[], int size) {          // finding multiple missing elemen
 
 int main() {
     int A[10] = {1, 2, 4, 5, 6, 7, 8, 9, 12, 13};
-    cout << Missing1(A, 10) << endl;
-    MulMissing(A, 10);
+    // printf("%d \n", Missing1(A, 10));
+    // MulMissing(A, 10);
     return 0;
 }
