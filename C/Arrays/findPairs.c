@@ -2,49 +2,21 @@
 
 #include <stdio.h>
 
-int Missing1(int A[], int size) {          // finding missing element
-    int diff = A[0] - 0;
-    for (int i = 0; i < size; i++) {
-        if (A[i]-i != diff) {
-            return i + diff;
-            break;
-        }
-    }
-    return 0;
-}
-
-void MulMissing(int A[], int size) {          // finding multiple missing element
-    int diff = A[0] - 0;
-    for (int i = 0; i < size; i++) {
-        if (A[i]-i != diff) {
-            while (diff < A[i]-i) {
-                printf("%d ", i + diff);
-                diff++;
+void pair1(int A[], int size, int n) {                          // finding pair of elements
+    for (int i = 0; i < size; i++) {          
+        for (int j = i+1; j < size; j++) {
+            if (A[i] + A[j] == n) {
+                printf("%d + %d = %d\n", A[i], A[j], n);
             }
         }
     }
 }
 
-
-int main() {
-    int A[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 12};
-    int A[10] = {1, 3, 8, -10, 16, 7, 5, 2, 9, 132};
-    // printf("%d \n", Missing1(A, 10));
-    // MulMissing(A, 10);
-
-    for (int i = 0; i < 10; i++) {          // finding pair of elements
-        for (int j = i+1; j < 10; j++) {
-            if (A[i] + A[j] == 11) {
-                printf("%d %d \n", A[i], A[j]);
-            }
-        }
-    }
-
-    int i = 0, j = 9;           // finding pair in sorted array
-    int n = 13;
+void pair2(int A[], int size, int n) {                          // finding pair in sorted array
+    int i = 0, j = size-1;          
     while (i < j) {
         if (A[i] + A[j] == n) {
-            printf("%d %d \n", A[i], A[j]);
+            printf("%d + %d = %d\n", A[i], A[j], n);
             i++;
             j--;
         } else if (A[i] + A[j] < n) {
@@ -53,6 +25,15 @@ int main() {
             j--;
         }        
     }
+}
+
+int main() {
+    int A[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+    // int A[10] = {1, 3, 8, -10, 16, 7, 5, 2, 9, 132};  // can be only used in pair1
+
+    pair1(A, 10, 5);
+
+    pair2(A, 10, 5);
 
     return 0;
 }
