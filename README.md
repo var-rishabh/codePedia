@@ -3,10 +3,10 @@
 
 <p> <img align="right" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.istockphoto.com%2Fvectors%2Fprogramming-and-coding-concept-vector-id869105902%3Fk%3D6%26m%3D869105902%26s%3D612x612%26w%3D0%26h%3DF5_yOapylnLS1tAr-KrS-fK1iFSlVx44tEH0t7bNu8g%3D&f=1&nofb=1" width="250px"> </p>
 
-> - This encyclopedia contains code of Python, C, C++ and Java. (Soon more languages will be added.)
+> - This encyclopedia contains code of Python, C and C++.
 
 > - **Topics**: <br>
-> `Basic Maths` `Data Types` `Star & Number Patterns` `DSA` `Matrix` `Arrays` `Printing Alphabets` `Cool GUI Patterns` `Small Games`
+> `Basic Maths` `Data Types` `Star & Number Patterns` `DSA` `Matrix` `Arrays` `Printing Alphabets` `Cool GUI Patterns` `Small Games` `DSA`
 
 > - These programs can help you in your exams also 😅. <br>
 
