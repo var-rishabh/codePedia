@@ -30,7 +30,7 @@ void Insert(struct Array *arr, int index, int x) {              /* -- Inserting 
         arr->A[index] = x;
         arr->length++;
     } else {
-        printf("Wrong Index \n");
+        printf("Wrong Index. \n");
     }
 }
 
@@ -42,7 +42,7 @@ int Delete(struct Array *arr, int index) {                      /* -- Deleting e
         }
         arr->length--;
     } else {
-        printf("Wrong Index \n");
+        printf("Wrong Index. \n");
     }
     return del;
 }
