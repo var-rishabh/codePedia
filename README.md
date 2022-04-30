@@ -8,7 +8,7 @@
 > - **Topics**: <br>
 > `Basic Maths` `Data Types` `Star & Number Patterns` `DSA` `Matrix` `Arrays` `Printing Alphabets` `Cool GUI Patterns` `Small Games` `DSA`
 
-> - And a collection of leetcode solutions. ✨
+> - A collection of leetcode solutions. ✨
 > - These programs can help you in your exams also 😅. <br>
 
 <p align="center"> 
