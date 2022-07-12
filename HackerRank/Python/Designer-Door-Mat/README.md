@@ -47,7 +47,7 @@ Output the design pattern.
 
 ### Sample Input
 
-``` 9 27 ```
+```  9 27  ```
 
 ### Sample Output
 ```
