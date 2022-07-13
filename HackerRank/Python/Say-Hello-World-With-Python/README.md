@@ -23,4 +23,4 @@ The above code will print Hello, World! on your screen. Try it yourself in the e
 
 ### Sample Output 0
 
-``` Hello, World! ```
+``` Hello, World!  ```
