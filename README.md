@@ -5,7 +5,7 @@
 
 > This encyclopedia contains solutions of problem which can lead to 5 Star Bagde on HackerRank in Python.
 
-> **Languages**: `Python`
+> **Languages**: `C++` `Python`
 
 > Soon more Language and different platform solutions will be pushed. 💫
 
