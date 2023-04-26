@@ -94,12 +94,65 @@ int test4(int a[], int size, int x, int output[]) {
     }
     int ans = test4(a, size-1, x, output);
 
-    if (a[size-1] == x) {
-        output[ans] = ans;
-        ans++;
+    if(a[size-1] == x) {
+	output[ans++] = size-1;
     }
     
     return ans;
+}
+
+// finding length of a string
+int strLen(char word[]) {
+	if (word[0] == '\0') {
+		return 0;
+	}
+	int newLength = strLen(word + 1);
+	return ++newLength;
+}
+
+// remove letter from a string
+void removeLetter(char word[]) {
+	if (word[0] == '\0') {
+		return;
+	}
+	if (word[0] != 'a') {
+		removeLetter(word + 1);
+	} else {
+		int i = 1;
+		for (; word[i] != '\0'; i++) {
+			word[i - 1] = word[i];
+		}
+		word[i - 1] = word[i];
+		removeLetter(word);
+	}
+}
+
+// remove consecutive duplicate letter from a string
+void removeDuplicate(char word[]) {
+	if (word[0] == '\0') {
+		return;
+	}
+	removeDuplicate(word + 1);
+	if (word[0] == word[1]) {
+		int i = 1;
+		for (; word[i] != '\0'; i++) {
+			word[i - 1] = word[i];	
+		}
+		word[i - 1] = word[i];
+		removeDuplicate(word);	
+	}
+}
+
+// merge sort
+void mergeSort(int arr[], int start, int end) {
+	if (start == end) {
+		return;	
+	}
+	int mid = (start + end) / 2;
+	mergeSort(arr, start, mid);
+	mergeSort(arr, mid + 1, end);
+
+	 
 }
 
 int main() {
@@ -109,11 +162,9 @@ int main() {
     int a[5] = {5,2,5,5,2};
     int output[5];
 
-    int ans = test4(a, 5, x, output);
-
-    for (int i = 0; i < ans; i++) {
-        cout << output[i] << endl;
-    }
+	
+    char word[100] = "aaabbbbccccddddab";
+    removeDuplicate(word);
     
     cout << "--------------------------------------";
     return 0;
