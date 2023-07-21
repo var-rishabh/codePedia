@@ -1,4 +1,4 @@
-<h1> CodePedia 📚: An encyclopedia of codes. </h1>
+<h1> CodePedia 📚 </h1>
 
 > ### **Hackerrank** (to 5 star) 
 ![Python](https://img.shields.io/badge/python-blue.svg?style=for-the-badge&logo=c&logoColor=white)
