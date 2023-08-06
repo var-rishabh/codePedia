@@ -1,24 +1,35 @@
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
-string convertString(string str) {
-	bool makeCapital = true;
-	for(char ch : str) {
-		if (ch >= 'a' && ch <= 'z') {
-			if (makeCapital) {
-				ch = ch - 32;
-				makeCapital = false;
-			}
-		} else if (ch == 32) {
-			makeCapital = true;
-		}
+bool testFunction(int n) {
+	bool result = false;
+	int old = n;
+	int x = 0;
+	while (n > 0) {
+		x = (x * 10) + n%10;
+		n /= 10;
 	}
-	return str;
+	if (old == x) result = true;
+    return result;
 }
 
 int main() {
-	string x;
-	getline(cin, x);
-	cout << convertString(x) << endl;
-	return 0;
+    int t;
+    cin >> t;
+
+    while (t--) {
+        // int n;
+        // cin >> n;
+
+		// int m;
+		// cin >> m;
+
+        int x;
+        cin >> x;
+
+        bool result = testFunction(x);
+        cout << result << endl;
+    }
+
+    return 0;
 }
