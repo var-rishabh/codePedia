@@ -1,3 +1,19 @@
+// You are given a string ‘STR’ of size ‘N’ and an integer ‘M’ 
+// (the number of rows in the zig-zag pattern of ‘STR’). 
+// Your task is to return the string formed by concatenating all ‘M’ rows 
+// when string ‘STR’ is written in a row-wise zig-zag pattern.
+
+// Input
+// 2
+// 7 3
+// ABCDEFG
+// 5 2
+// NINJA
+
+// Output
+// AEBDFCG
+// NNAIJ
+
 #include <bits/stdc++.h>
 using namespace std;
 
