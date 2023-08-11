@@ -1,38 +1,25 @@
 #include <iostream>
 using namespace std;
 
-int calcDivi(int n) {
-  int sum = 0;
-  for (int i = 1; i * i <= n; i++) {
-    if (n % i == 0) {
-      sum += i;
-      if ((n/i) != i) {
-        sum += (n/i);
+// bool testFunction(int x) {
+// int testFunction(int n, int m) {
+// int testFunction(int n) {
+string testFunction(string s, int arr[][3], int n) {
+  for (int i = 0; i < n; i++) {
+    for (int j = arr[i][0]; j <= arr[i][1]; j++) {
+      if (arr[i][2] == 1 && s[j] != 'z') {
+        s[j] += 1;
+      } else if (arr[i][2] == 1 && s[j] == 'z') {
+        s[j] = 'a';
+      } else if (arr[i][2] == 0 && s[j] != 'a') {
+        s[j] -= 1;
+      } else if (arr[i][2] == 0 && s[j] == 'a') {
+        s[j] = 'z';
       }
     }
   }
-  return sum;
+  return s;
 }
-
-// bool testFunction(int x) {
-// int testFunction(int n, int m) {
-int testFunction(int n) {
-	int count = 0;
-	for (int i = 1; i <= n; i++) {
-		count += calcDivi(i);
-	}
-	return count;
-}
-
-int calcGCD(int n, int m) {
-    while (m != 0) {
-        int temp = m;
-        m = n % m;
-        n = temp;
-    }
-    return n;
-}
-
 
 int main() { 
     int t;
@@ -41,11 +28,17 @@ int main() {
     while (t--) {
         // int n, m;
         // cin >> n >> m;
-        int x;
-        cin >> x;
+        // int x;
+        // cin >> x;
+        string s;
+        cin >> s;
 
+        int n = 2;
+
+        int arr[n][3] = {{0,0,0}, {1,1,1}};
         // int result = testFunction(n, m);
-        int result = testFunction(x);
+        // int result = testFunction(s);
+        string result = testFunction(s, arr, n);
         // bool result = testFunction(x);
 
         cout << result << endl;
