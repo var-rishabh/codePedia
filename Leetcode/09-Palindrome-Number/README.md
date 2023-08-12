@@ -1,4 +1,4 @@
-# 7. Palindrome Number
+# <a href="https://leetcode.com/problems/palindrome-number/">7. Palindrome Number</a>
 ### Easy
 
 ---
