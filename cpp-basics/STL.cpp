@@ -5,12 +5,12 @@ int main() {
 
 
     // pairs
-    pair<int, int> p1 = {1, 2};
-    pair<int, pair<int, int>> p2 = {1, {2, 3}};
+    pair<int, int> p1 = { 1, 2 };
+    pair<int, pair<int, int>> p2 = { 1, { 2, 3 } };
     // cout << p1.first << " " << p2.second.first << endl;
-    pair<int, int> arr[] = {{1, 2}, {3, 4}};
+    pair<int, int> arr[] = { { 1, 2 }, { 3, 4 } };
     // cout << arr[0].first << " " << arr[1].second << endl;
-    
+
 
     // vectors
     vector<int> v1;
@@ -18,9 +18,9 @@ int main() {
     v1.emplace_back(2); // increasing size of the vector dynamically, it is faster than push_back
     v1.push_back(3);
     v1.push_back(4);
- 
+
     vector<pair<int, int>> v2;
-    v2.push_back({1, 2});   // pushing values in container
+    v2.push_back({ 1, 2 });   // pushing values in container
     v2.emplace_back(3, 4);  // pushing values in container as a pair without
 
     vector<int> v3(5, 100); // 5 elements of value 100
@@ -57,7 +57,7 @@ int main() {
     // v1.swap(v2);     -> swaps the vectors
     // v1.clear();      -> cleans the entire vector
     // v1.empty();      -> true if empty
-    
+
 
     // list, dequeue        -> both have same fucntions as vector
     list<int> l1;
@@ -115,14 +115,21 @@ int main() {
     unordered_set<int> us1;
 
 
+    // map (storing and fetching) takes O(log n) time - best avg and worst case
+    // - in map any data type can be the key
+
+    // unordered_map (storing and fetching) takes O(1) time in best and avg, but O(n) in worst case
+    // - in unordered map only int, double or char can be the key
+
     // map  -> key value pairs
     map<int, int> mp1;
     map<int, pair<int, int>> mp2;
     map<pair<int, int>, int> mp3;
+    unordered_map<char, int> mp5;
     // stored in sorted order of keys with all unique keys
     mp1[1] = 5;
-    mp1.insert({3, 1});
-    mp3[{2,3}] = 10;
+    mp1.insert({ 3, 1 });
+    mp3[{2, 3}] = 10;
 
 
     // sorting
@@ -144,12 +151,12 @@ int main() {
     string s = "132";
     sort(s.begin(), s.end());
     // generate permutations
-    // do {
-    //     cout << s << endl;
-    // } while (next_permutation(s.begin(), s.end()));
+    do {
+        cout << s << endl;
+    } while (next_permutation(s.begin(), s.end()));
 
     // int max = max_element(a, a+n);
     // int min = min_element(a, a+n);
 
     return 0;
-}   
+}
