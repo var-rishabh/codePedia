@@ -1,4 +1,4 @@
-# <a href="https://leetcode.com/problems/create-hello-world-function/">2667. Create Hello World Function</a>
+# <a href="https://leetcode.com/problems/to-be-or-not-to-be/">2667. Create Hello World Function</a>
 Easy
 
 ---
