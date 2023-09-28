@@ -1,54 +1,80 @@
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 
-// bool testFunction(int x) {
-// int testFunction(int n, int m) {
-// int testFunction(int n) {
-string testFunction(string s, int arr[][3], int n) {
-  for (int i = 0; i < n; i++) {
-    for (int j = arr[i][0]; j <= arr[i][1]; j++
-      ) {
-      if (arr[i][2] == 1 && s[j] != 'z') {
-        s[j] += 1;
-      } else if (arr[i][2] == 1 && s[j] == 'z') {
-        s[j] = 'a';
-      } else if (arr[i][2] == 0 && s[j] != 'a') {
-        s[j] -= 1;
-      } else if (arr[i][2] == 0 && s[j] == 'a') {
-        s[j] = 'z';
-      }
-    }
-  }
-  return s;
-}
+/*
+int main () {
+	string s1;
+	cin >> s1;
+	string s2;
+	cin >> s2;
 
-void lolfa() {
+	cout << s1.size() << endl;
+	cout << s2.size() << endl;
 
+	cout << s1 + s2 << endl;
+
+	string s3 = s1;
+	s3[0] = s2[0];
+	string s4  = s2;
+	s4[0] = s1[0];
+
+	cout << s3 << endl;
+	cout << s4 << endl;
+
+	return 0;
 }
+*/
+/*
+int main() {
+	string s1;
+	cin >> s1;
+
+	// int a[26] = {0};
+
+	unordered_map<char, int> hash;
+
+	for (auto i : s1) {
+		// ++a[int(i) - 91];
+		++hash[i];
+	}
+
+	string ans = "";
+	//for (int j = 0; j < 26; j++) {
+	//	if (a[j] % 2 != 0) {
+	//		ans += char(91 + j);
+	//	}
+	//}
+	int t = 0;
+	for (int j = 0; j < hash.size(); j++) {
+		cout << hash[j] << " " << ++t << endl;
+	}
+	//cout << ans;
+	return 0;
+}
+*/
+
 
 int main() {
-  // int t;
-  // cin >> t;
+	string s1;
+	cin >> s1;
 
-  // int *a = 0;
-  // while (t--) {
-  //   // int n, m;
-  //   // cin >> n >> m;
-  //   // int x;
-  //   // cin >> x;
-  //   string s;
-  //   cin >> s;
+	int len = s1.size();
+	int a[26] = {0};
+	for (auto i : s1) {
+		++a[int(i) - 97];
+	}
+	int t = 1;
+	for (auto j : a) {
+		if (j == 0) {
+			t = 0;
+			break;
+		}
+	}
+	if (t == 0) {
+		cout << "not panagram";
+	} else {
+		cout << "panagram";
+	}
 
-  //   int n = 2;
-
-  //   int arr[n][3] = { {0,0,0}, {1,1,1} };
-  //   // int result = testFunction(n, m);
-  //   // int result = testFunction(s);
-  //   string result = testFunction(s, arr, n);
-  //   // bool result = testFunction(x);
-
-  //   cout << result << endl;
-  // }
-  cout << 1 % 2;
-  return 0;
+	return 0;
 }
